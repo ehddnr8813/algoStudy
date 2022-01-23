@@ -7,6 +7,11 @@ class Solution {
 
 	static HashMap<String, Integer> hm = new HashMap<>();
 
+	/**
+	 * 정확성: 83.3
+	 * 효율성: 16.7
+	 * 합계: 100.0 / 100.0
+	 */
 	public boolean solution(String[] phone_book) {
 		Arrays.sort(phone_book);
 		for (int i = 0; i < phone_book.length - 1; i++) {
@@ -15,6 +20,12 @@ class Solution {
 		}
 		return true;
 	}
+
+	/**
+	 * 정확성: 83.3
+	 * 효율성: 16.7
+	 * 합계: 100.0 / 100.0
+	 */
 
 	public static boolean solution2(String[] phone_book) {
 		for (int i = 0; i < phone_book.length; i++) {

@@ -3,6 +3,13 @@ package algoStudy.unfinishedRunner;
 import java.util.HashMap;
 import java.util.LinkedList;
 
+/**
+ * 채점 결과
+ * 정확성: 50.0
+ * 효율성: 50.0
+ * 합계: 100.0 / 100.0
+ */
+
 class Solution {
 
 	String answer = "";

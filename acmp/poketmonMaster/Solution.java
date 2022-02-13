@@ -21,7 +21,7 @@ public class Solution {
 
         HashMap<String, Integer> nameToIndex = new HashMap<>();
         HashMap<Integer, String> indexToName = new HashMap<>();
-        StringBuilder sb = new StringBuilder();
+        String sb = new String();
 
         for (int i = 1; i < n + 1; i++) {
             String poketmon = br.readLine();
@@ -32,11 +32,11 @@ public class Solution {
         while (m-- > 0) {
             String input = br.readLine();
             if (isInteger(input)) {
-                sb.append(indexToName.get(Integer.parseInt(input)));
+                sb += indexToName.get(Integer.parseInt(input));
             } else {
-                sb.append(nameToIndex.get(input));
+                sb += nameToIndex.get(input);
             }
-            sb.append("\n");
+            sb += "\n";
         }
 
         System.out.println(sb.toString());

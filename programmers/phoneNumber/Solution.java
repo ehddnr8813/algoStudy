@@ -1,4 +1,4 @@
-package algoStudy.phoneNumber;
+package algoStudy.programmers.phoneNumber;
 
 import java.util.Arrays;
 import java.util.Comparator;

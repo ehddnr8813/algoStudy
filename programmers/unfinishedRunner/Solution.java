@@ -1,4 +1,4 @@
-package algoStudy.unfinishedRunner;
+package algoStudy.programmers.unfinishedRunner;
 
 import java.util.HashMap;
 import java.util.LinkedList;

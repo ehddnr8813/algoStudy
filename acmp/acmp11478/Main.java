@@ -1,4 +1,4 @@
-package algoStudy.acmp11478;
+package algoStudy.acmp.acmp11478;
 
 import java.io.BufferedReader;
 import java.io.IOException;

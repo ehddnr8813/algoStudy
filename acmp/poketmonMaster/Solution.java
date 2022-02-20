@@ -1,4 +1,4 @@
-package algoStudy.poketmonMaster;
+package algoStudy.acmp.poketmonMaster;
 
 import java.io.BufferedReader;
 import java.io.IOException;

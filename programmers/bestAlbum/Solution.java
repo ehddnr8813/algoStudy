@@ -1,4 +1,4 @@
-package algoStudy.bestAlbum;
+package algoStudy.programmers.bestAlbum;
 
 import java.util.ArrayList;
 import java.util.Collections;

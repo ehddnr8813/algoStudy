@@ -16,6 +16,7 @@ public class Main {
 
     static int N;
     static ArrayList<SerialNum> serialArr;
+    static SerialNum[] arr;
 
     public static class SerialNum implements Comparable<SerialNum> {
         String str;
@@ -56,6 +57,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         N = Integer.parseInt(br.readLine());
+
         serialArr = new ArrayList<>();
         for (int i = 0; i < N; i++) {
             serialArr.add(new SerialNum(br.readLine()));

@@ -1,5 +1,7 @@
 package algoStudy.programmers.dp;
 
+import java.util.Arrays;
+
 /**
  * 정확성 테스트
  * 테스트 1 〉 통과 (0.03ms, 71.6MB)
@@ -47,12 +49,13 @@ public class Solution3 {
                 if (dp[i][j] == -1)
                     continue;
                 if (i >= 1 && dp[i - 1][j] != -1)
-                    dp[i][j] += dp[i - 1][j] % 1000000007;
+                    dp[i][j] += dp[i - 1][j];
                 if (j >= 1 && dp[i][j - 1] != -1)
-                    dp[i][j] += dp[i][j - 1] % 1000000007;
+                    dp[i][j] += dp[i][j - 1];
             }
         }
-        // System.out.println(Arrays.deepToString(dp));
+        System.out.println(Arrays.deepToString(dp));
+        // System.out.println(dp[99][99]);
         return dp[n - 1][m - 1] % 1000000007;
     }
 
@@ -61,7 +64,7 @@ public class Solution3 {
         // System.out.println(s.solution(4, 3, new int[][] { { 2, 2 } }));
         // System.out.println(s.solution(3, 3, new int[][] { { 1, 3 }, { 3, 1 }, { 2, 3
         // }, { 2, 1 } }));
-        System.out.println(s.solution(7, 4,
+        System.out.println(s.solution(100, 100,
                 new int[][] { { 2, 1 }, { 2, 2 }, { 2, 3 }, { 4, 2 }, { 4, 3 }, { 4, 4 }, { 6, 2 }, { 6, 3 } }));
     }
 }

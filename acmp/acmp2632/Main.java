@@ -35,6 +35,8 @@ public class Main {
             int temp = 0;
             for (int j = i; j < i + arr.length - 1; j++) {
                 temp += arr[j % arr.length];
+                if (temp > target)
+                    break;
                 aPizza.put(temp, aPizza.getOrDefault(temp, 0) + 1);
             }
         }
@@ -49,6 +51,8 @@ public class Main {
             int temp = 0;
             for (int j = i; j < i + arr2.length - 1; j++) {
                 temp += arr2[j % arr2.length];
+                if (temp > target)
+                    break;
                 bPizza.put(temp, bPizza.getOrDefault(temp, 0) + 1);
             }
         }

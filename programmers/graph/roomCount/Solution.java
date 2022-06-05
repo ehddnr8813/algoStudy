@@ -36,7 +36,7 @@ public class Solution {
                     Edge ed;
                     switch (dir) {
                         case 1:
-                            ed = new Edge(x1, y1 + 1, 3);
+                            ed = new Edge(x1 + 1, y1, 7);
                             break;
                         case 3:
                             ed = new Edge(x1, y1 - 1, 1);
@@ -45,7 +45,7 @@ public class Solution {
                             ed = new Edge(x1, y1 - 1, 7);
                             break;
                         case 7:
-                            ed = new Edge(x1, y1 + 1, 5);
+                            ed = new Edge(x1 - 1, y1, 1);
                             break;
                         default:
                             ed = new Edge(0, 0, 0);
@@ -62,6 +62,11 @@ public class Solution {
         }
 
         return answer;
+    }
+
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        System.out.println(s.solution(new int[] { 5, 2, 7, 1, 6, 3 }));
     }
 
     static class Edge {
